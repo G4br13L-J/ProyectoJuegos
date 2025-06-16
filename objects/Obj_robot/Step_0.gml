@@ -1,12 +1,21 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 27CA02ED
-/// @DnDArgument : "code" "/// @description Execute Code$(13_10)mitadVistaX = camera_get_view_width(view_camera[0]) / 2;$(13_10)mitadVistaY = camera_get_view_height(view_camera[0]) / 2;$(13_10)$(13_10)camera_set_view_pos(view_camera[0], Obj_robot.x - mitadVistaX, Obj_robot.y - mitadVistaY);$(13_10)$(13_10)"
+/// @DnDArgument : "code" "/// @description Execute Code$(13_10)mitadVistaX = camera_get_view_width(view_camera[0]) / 2;$(13_10)mitadVistaY = camera_get_view_height(view_camera[0]) / 2;$(13_10)$(13_10)camera_set_view_pos(view_camera[0], Obj_robot.x - mitadVistaX, Obj_robot.y - mitadVistaY);$(13_10)$(13_10)// Sonido de pasos (solo mientras se mueve con las flechas)$(13_10)if (keyboard_check(vk_up) || keyboard_check(vk_down) || keyboard_check(vk_left) || keyboard_check(vk_right)) {$(13_10)    if (!audio_is_playing(Snd_step)) {$(13_10)        audio_play_sound(Snd_step, 1, true); // loop activado$(13_10)    }$(13_10)} else {$(13_10)    audio_stop_sound(Snd_step);$(13_10)}"
 /// @description Execute Code
 mitadVistaX = camera_get_view_width(view_camera[0]) / 2;
 mitadVistaY = camera_get_view_height(view_camera[0]) / 2;
 
 camera_set_view_pos(view_camera[0], Obj_robot.x - mitadVistaX, Obj_robot.y - mitadVistaY);
+
+// Sonido de pasos (solo mientras se mueve con las flechas)
+if (keyboard_check(vk_up) || keyboard_check(vk_down) || keyboard_check(vk_left) || keyboard_check(vk_right)) {
+    if (!audio_is_playing(Snd_step)) {
+        audio_play_sound(Snd_step, 1, true); // loop activado
+    }
+} else {
+    audio_stop_sound(Snd_step);
+}
 
 /// @DnDAction : YoYo Games.Instances.Instance_Get_Count
 /// @DnDVersion : 1

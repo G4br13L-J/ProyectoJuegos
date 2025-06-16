@@ -1,3 +1,17 @@
+/// @DnDAction : YoYo Games.Instances.Set_Alarm
+/// @DnDVersion : 1
+/// @DnDHash : 11832E62
+/// @DnDArgument : "steps" "irandom_range(10, 500)"
+/// @DnDArgument : "alarm" "1"
+alarm_set(1, irandom_range(10, 500));
+
+/// @DnDAction : YoYo Games.Instances.Set_Alarm
+/// @DnDVersion : 1
+/// @DnDHash : 6B332D55
+/// @DnDArgument : "steps" "irandom_range(10, 500)"
+/// @DnDArgument : "alarm" "2"
+alarm_set(2, irandom_range(10, 500));
+
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 37B8A1D8

@@ -1,3 +1,10 @@
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1.1
+/// @DnDHash : 72F17C89
+/// @DnDArgument : "soundid" "Snd_zombie_hit"
+/// @DnDSaveInfo : "soundid" "Snd_zombie_hit"
+audio_play_sound(Snd_zombie_hit, 0, 0, 1.0, undefined, 1.0);
+
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 376B5B6E

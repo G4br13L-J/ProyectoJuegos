@@ -2,7 +2,7 @@
   "$GMObject":"",
   "%Name":"Obj_door",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"Obj_robot","path":"objects/Obj_robot/Obj_robot.yy",},"eventNum":0,"eventType":4,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Obj_robot","path":"objects/Obj_robot/Obj_robot.yy",},"eventNum":0,"eventType":4,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Obj_door",
